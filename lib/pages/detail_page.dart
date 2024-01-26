@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:my_news_app/models/news_model.dart';
 
 class DetailNewsUI extends StatelessWidget {
   const DetailNewsUI({super.key});
@@ -20,6 +19,14 @@ class DetailNewsUI extends StatelessWidget {
             ),
             SizedBox(
               height: 30,
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.end,
+              children: [
+                Text('Ini tanggal'),
+                // SizedBox(height: 20),
+                Text('ini author'),
+              ],
             ),
             Text(
               'ini isi berita',
